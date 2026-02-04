@@ -3,11 +3,13 @@
     margin: 0px;
     padding: 0px;
 }
+
 body {
-    min-height: 100vh;  
+    height: 100vh;
 }
+
 header {
-    border: 1px solid greenyellow;
+    /* border: 1px solid greenyellow; */
     min-height: 20vh;
     margin: 20px;
     padding: 20px;
@@ -15,6 +17,7 @@ header {
     justify-content: center;
     justify-content: space-between;
 }
+
 .left {
     display: flex;
     flex-direction: row;
@@ -22,13 +25,16 @@ header {
     align-items: center;
     gap: 10px;
 }
+
 .left img {
     width: 5vw;
     height: 5vh;
 }
+
 ul {
     display: flex;
 }
+
 li {
     display: flex;
 }
@@ -37,6 +43,7 @@ a {
     color: black;
     padding: 15px;
 }
+
 .right {
     display: flex;
     flex-direction: row;
@@ -44,24 +51,28 @@ a {
     align-items: center;
     gap: 10px;
 }
+
 .bt {
     border: 0ch;
     font-size: 18px;
 }
+
 .bt-1 {
     border-radius: 15px;
-    background-color: white ;
+    background-color: white;
     font-size: 18px;
     width: 6vw;
     height: 4vh;
 }
+
 main {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     min-height: 80vh;
     display: flex;
 }
+
 .left-1 {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: 50vw;
     padding: 30px;
     padding-top: 60px;
@@ -70,29 +81,37 @@ main {
     justify-content: center;
     align-items: center;
 }
+
 .left-1 h1,
 p {
     color: black;
     padding: 20px;
 }
+
 .left-1 h1 {
     font-size: 60px;
 }
+
 .left-1 p {
     font-size: 30px;
     color: rgb(118, 115, 115);
 }
+
 .wrapper {
-    border: 1px solid gold;
-    width: 40vw;
+    /* border: 1px solid gold; */
+    height: 50vh;
+    width: 45vw;
     padding: 20px;
     margin: 15px;
+    margin-top: 25vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 10px;
 }
+
 .lf button {
     border-radius: 10px;
     margin-bottom: 70px;
@@ -103,6 +122,12 @@ p {
     color: white;
     gap: 10px;
 }
+
 .lf-1 img {
-    padding: 30px;
+    padding: 25px;
+}
+
+.right-1 img {
+    width: 48vw;
+    height: 99vh;
 }
