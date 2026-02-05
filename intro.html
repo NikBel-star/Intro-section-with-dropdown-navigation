@@ -4,23 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Intro section with dropdown navigation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="intro.css">
 </head>
 
 <body>
     <header>
+        <!-- Checkbox for mobile menu toggle -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
         <div class="left">
             <img src="./images/logo.svg" alt="">
+            <label for="menu-toggle" class="mobile-menu">
+                <img src="./images/icon-menu.svg" alt="">
+            </label>
             <nav>
                 <ul>
-                    <li>
+                    <li class="dropdown">
                         <a href="#">Features</a>
-                        <!-- <img src="./images/icon-arrow-down.svg" alt=""> -->
+                        <img src="./images/icon-arrow-down.svg" alt="">
+                        <ul class="dropdown-menu">
+                            <li><img src="./images/icon-todo.svg" alt=""><a href="#">Todo List</a></li>
+                            <li><img src="./images/icon-calendar.svg" alt=""><a href="#">Calendar</a></li>
+                            <li><img src="./images/icon-reminders.svg" alt=""><a href="#">Reminders</a></li>
+                            <li><img src="./images/icon-planning.svg" alt=""><a href="#">Planning</a></li>
+                        </ul>
                     </li>
-                    <li>
+                    <li class="dropdown">
                         <a href="#">Company</a>
-                        <!-- <img src="./images/icon-arrow-down.svg" alt=""> -->
+                        <img src="./images/icon-arrow-down.svg" alt="">
+                        <ul class="dropdown-menu">
+                            <li><a href="#">History</a></li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
                     </li>
                     <li><a href="#">Careers</a></li>
                     <li><a href="#">About</a></li>
@@ -31,20 +51,64 @@
             <button class="bt">Login</button>
             <button class="bt-1">Register</button>
         </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay">
+            <label for="menu-toggle" class="close-menu">
+                <img src="./images/icon-close-menu.svg" alt="">
+            </label>
+            <nav class="mobile-nav">
+                <ul>
+                    <li class="mobile-dropdown">
+                        <input type="checkbox" id="mobile-features-toggle" class="mobile-dropdown-toggle">
+                        <label for="mobile-features-toggle" class="mobile-dropdown-label">
+                            <span>Features</span>
+                            <img src="./images/icon-arrow-down.svg" alt="" class="arrow">
+                        </label>
+                        <ul class="mobile-dropdown-menu">
+                            <li><img src="./images/icon-todo.svg" alt=""><a href="#">Todo List</a></li>
+                            <li><img src="./images/icon-calendar.svg" alt=""><a href="#">Calendar</a></li>
+                            <li><img src="./images/icon-reminders.svg" alt=""><a href="#">Reminders</a></li>
+                            <li><img src="./images/icon-planning.svg" alt=""><a href="#">Planning</a></li>
+                        </ul>
+                    </li>
+                    <li class="mobile-dropdown">
+                        <input type="checkbox" id="mobile-company-toggle" class="mobile-dropdown-toggle">
+                        <label for="mobile-company-toggle" class="mobile-dropdown-label">
+                            <span>Company</span>
+                            <img src="./images/icon-arrow-down.svg" alt="" class="arrow">
+                        </label>
+                        <ul class="mobile-dropdown-menu">
+                            <li><a href="#">History</a></li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+                <div class="mobile-auth">
+                    <button class="bt">Login</button>
+                    <button class="bt-1">Register</button>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
         <section class="left-1">
-            <h1>Make remote work</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque odio eaque soluta ut suscipit dolor,
-                ratione vitae aspernatur.</p>
-            <div class="wrapper">
-                <div class="lf">
-                    <button>Learn more</button>
-                    <div class="lf-1">
-                        <img src="./images/client-databiz.svg" alt="">
-                        <img src="./images/client-audiophile.svg" alt="">
-                        <img src="./images/client-meet.svg" alt="">
-                        <img src="./images/client-maker.svg" alt="">
+            <div class="wr">
+                <h1>Make remote work</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque odio eaque soluta ut suscipit dolor,
+                    ratione vitae aspernatur.</p>
+                <div class="wrapper">
+                    <div class="lf">
+                        <button>Learn more</button>
+                        <div class="lf-1">
+                            <img src="./images/client-databiz.svg" alt="">
+                            <img src="./images/client-audiophile.svg" alt="">
+                            <img src="./images/client-meet.svg" alt="">
+                            <img src="./images/client-maker.svg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
